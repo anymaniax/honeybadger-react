@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from "react";
+import BuggyComponent from "./BuggyComponent";
+import BuggyWithContextComponent from "./BuggyWithContextComponent";
+import GoodComponent from "./GoodComponent";
 
-import GoodComponent from './GoodComponent'
-import BuggyComponent from './BuggyComponent'
-
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <GoodComponent />
-        <BuggyComponent />
-      </div>
-    )
-  }
+export default function App() {
+  return (
+    <div>
+      <GoodComponent />
+      <BuggyComponent />
+      <BuggyWithContextComponent />
+    </div>
+  );
 }
